@@ -1,6 +1,6 @@
 import { TransactionResponse } from "@ethersproject/abstract-provider";
 import { ethers } from "ethers";
-import { BaseInterface } from "./interfaces";
+import { BaseInterface } from "./interfaces/index.";
 import { getRPC } from "./utils/common";
 import { getCrowdSaleAbi } from "./utils/getAbis";
 import { getCrowdSaleAddress } from "./utils/getAddress";

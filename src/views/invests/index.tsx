@@ -3,12 +3,12 @@ declare var window: any;
 import React from 'react';
 import { Flex, Heading, SimpleGrid, Spacer, useDisclosure } from '@chakra-ui/react';
 import { ConnectWallet, SuccessModal, WalletInfo } from '../../components';
-import { IPackage, IRate, IWalletInfo, TOKEN } from '@/src/_types_';
-import { ethers } from 'ethers';
-import { packages } from '@/src/constants';
-import InvestCard from './components/InvestCard';
-import CrowSaleContract from '@/src/contracts/CrowdSaleContract';
-import UsdtContract from '@/src/contracts/UsdtContract';
+import { IPackage, IRate, IWalletInfo, TOKEN } from "../../_types_";
+import { ethers } from "ethers";
+import { packages } from "../../constants";
+import InvestCard from "./components/InvestCard";
+import CrowSaleContract from "../../contracts/CrowdSaleContract";
+import UsdtContract from "../../contracts/UsdtContract";
 
 export default function InvestView() {
   const [wallet, setWallet] = React.useState<IWalletInfo>();
